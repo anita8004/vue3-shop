@@ -1,0 +1,27 @@
+@import "bootstrap/scss/bootstrap";
+
+html, body {
+  overflow: hidden;
+}
+
+html {
+  font-size: 16px;
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 12px;
+  }
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 60px 1fr 60px;
+}
+
+header, footer {
+  height: 60px;
+  background-color: #eee;
+}
