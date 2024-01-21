@@ -1,3 +1,7 @@
+@import "bootstrap/scss/functions";
+@import "./helper/variables";
+@import "./helper/variables-dark";
+
 @import "bootstrap/scss/bootstrap";
 
 html, body {
