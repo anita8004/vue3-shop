@@ -38,3 +38,15 @@ import './scss/style.scss'
 @import "./helper/variables-dark";
 @import "bootstrap/scss/bootstrap";
 ```
+
+## Add Vue-Router
+1. create file
+- src/router/index.js
+
+2. Edit main.js
+```js
+// src/main.js
+const app = createApp(App)
+app.use(router)
+app.mount('#app')
+```
