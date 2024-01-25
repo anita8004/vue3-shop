@@ -38,9 +38,10 @@
 <script setup>
 import { reactive } from 'vue';
 import axios from 'axios';
-import router from '../router';
+import { useRouter } from 'vue-router';
 import Cookies from 'js-cookie';
 
+const router = useRouter();
 const state = reactive({
   username: '',
   password: ''
