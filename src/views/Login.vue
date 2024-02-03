@@ -37,7 +37,7 @@
 
 <script setup>
 import { reactive } from 'vue';
-import axios from 'axios';
+import { login as loginRequest } from '../apis/user';
 import { useRouter } from 'vue-router';
 import Cookies from 'js-cookie';
 
@@ -48,9 +48,7 @@ const state = reactive({
 })
 
 const login = () => {
-  const url = import.meta.env.VITE_APP_API;
-  const api = `${url}/admin/signin`;
-  axios.post(api, state)
+  loginRequest(state)
   .then(res => {
     console.log(res);
     console.log(res.data.success);
