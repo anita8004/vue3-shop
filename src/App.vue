@@ -7,7 +7,8 @@
       <h1>Logo</h1>
       <nav>
         <router-link class="me-2" to="/">Home</router-link>
-        <router-link to="/login">Login</router-link>
+        <router-link class="me-2" to="/login">Login</router-link>
+        <router-link to="/products">Products</router-link>
       </nav>
     </div>
   </header>
